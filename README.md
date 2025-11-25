@@ -37,7 +37,7 @@ cd automated-testings-sauce-ecomm
 Instala o Playwright, TypeScript e o dotenv para leitura de variáveis de ambiente.
 
 ```
-npm install .
+npm install
 ```
 
 ### 2.3. Configuração de Variáveis de Ambiente (.env)
