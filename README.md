@@ -84,8 +84,6 @@ O padrão BDD-like usa a função test.step() do Playwright para aumentar a legi
 Arquivo: tests/specs/login.spec.ts
 
 ```
-Typescript
-
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage'; // Importa o POM
 
