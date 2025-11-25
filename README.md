@@ -29,8 +29,6 @@ Siga os passos abaixo para clonar o projeto e configurar o ambiente de teste.
 #### 2.1. Clone o Repositório
 
 ```
-Bash
-
 git clone [https://github.com/claudianalima/automated-testings-sauce-ecomm.git]
 cd automated-testings-sauce-ecomm
 ```
@@ -39,8 +37,6 @@ cd automated-testings-sauce-ecomm
 Instala o Playwright, TypeScript e o dotenv para leitura de variáveis de ambiente.
 
 ```
-Bash
-
 npm install .
 ```
 
@@ -49,8 +45,6 @@ Para manter as credenciais seguras, crie um arquivo chamado .env na raiz do proj
 
 ### .env (ESTE ARQUIVO É IGNORADO PELO GITIGNORE)
 ```
-Bash
-
 SAUCE_USER=
 SAUCE_PASSWORD=
 ```
@@ -60,8 +54,6 @@ Utilize os usuários e password do site SauceDemo
 O Playwright usará esta linha para garantir que os binários do Chromium, Firefox e WebKit estejam instalados no seu ambiente.
 
 ```
-Bash
-
 npx playwright install
 ```
 
@@ -69,8 +61,6 @@ npx playwright install
 Execução de Todos os Testes
 
 ```
-Bash
-
 npx playwright test
 ```
 
@@ -78,8 +68,6 @@ Execução de um Arquivo Específico
 Para rodar apenas o teste de login:
 
 ```
-Bash
-
 npx playwright test tests/specs/login.spec.ts
 ```
 
@@ -87,8 +75,6 @@ Abrir o Relatório HTML
 Após a execução, você pode visualizar os resultados detalhados (incluindo os passos BDD-like):
 
 ```
-Bash
-
 npx playwright show-report
 ```
 
