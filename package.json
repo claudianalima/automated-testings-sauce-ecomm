@@ -1,0 +1,25 @@
+{
+  "name": "automated-testings-sauce-ecomm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudianalima/automated-testings-sauce-ecomm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudianalima/automated-testings-sauce-ecomm/issues"
+  },
+  "homepage": "https://github.com/claudianalima/automated-testings-sauce-ecomm#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
