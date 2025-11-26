@@ -5,19 +5,20 @@ export class LoginPage {
     private readonly usernameInput: Locator;
     private readonly passwordInput: Locator;
     private readonly loginButton: Locator;
-    private readonly url: string = 'https://www.saucedemo.com/';
 
-    constructor(private readonly page: Page) { 
+    constructor(public readonly page: Page) { 
         this.usernameInput = this.page.getByPlaceholder('Username');
         this.passwordInput = this.page.getByPlaceholder('Password');
         this.loginButton = this.page.getByRole('button', { name: 'Login' });
     }
 
     async goto() {
-        await this.page.goto(this.url);
+        await this.page.goto('https://www.saucedemo.com/');
     }
 
-    async loginSuccessfully() {
+    async loginSucesso() {
+        await this.goto(); 
+        
         await this.usernameInput.fill(SUCCESS_USER);
         await this.passwordInput.fill(PASSWORD);
         await this.loginButton.click();

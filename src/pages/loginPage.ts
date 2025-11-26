@@ -17,7 +17,7 @@ export class LoginPage {
         await this.page.goto(this.url);
     }
 
-    async loginSuccessfully() {
+    async loginSucesso() {
         await this.usernameInput.fill(SUCCESS_USER);
         await this.passwordInput.fill(PASSWORD);
         await this.loginButton.click();
