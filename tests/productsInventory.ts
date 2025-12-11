@@ -1,4 +1,4 @@
-import { INVENTORY_DATA } from '../testdata/dataInventory';
+import { INVENTORY_DATA } from '../src/pages/locatorsInventory';
 import { Page, Locator } from '@playwright/test';
 
 /**
