@@ -1,11 +1,12 @@
-import { test } from '../helpers/testSetup';
+// src/tests/inventory.test.ts (ou similar)
+
+import { test } from '../src/helpers/testSetup'; // Assumindo que este é o caminho correto
 import { expect } from '@playwright/test';
 
 test.describe('Inventário de produtos do site ecomm', () => {
     
     test('Deve adicionar os produtos no carrinho de compra', 
-    async ({ loggedUser, inventoryPage }) => { 
-        
+    async ({ inventoryPage, loggedUser }) => { 
         await test.step('Dado que o usuário está logado e na página de Inventário', async () => {
         });
 

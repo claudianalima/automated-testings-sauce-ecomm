@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
-import { test } from '../helpers/testSetup';
-import { SAUCE_LOCKED_USER } from '../../src/utils/env-utils'; 
+import { test } from '../src/helpers/testSetup';
+import { SAUCE_LOCKED_USER } from '../src/utils/env-utils'; 
 
 test.describe('Autenticação de Usuário no Sauce Demo', () => {
 
@@ -46,7 +46,7 @@ test.describe('Autenticação de Usuário no Sauce Demo', () => {
             await loginPageOnly.goto(); 
         });
         
-        await test.step('Quando o usuário insere uma senha inválida para um usuário padrão', async () => {
+        await test.step('Quando o usuário insere uma senha inválida para um usuário padrão', async () => {  
             await loginPageOnly.login('standard_user', 'senha_errada'); 
         });
 

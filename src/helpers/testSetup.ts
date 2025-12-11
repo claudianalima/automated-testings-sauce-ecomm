@@ -1,8 +1,8 @@
 import { test as baseTest, Page, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
 import { Inventory } from '../pages/productsInventory';
-import { INVENTORY_DATA } from '../testdata/dataInventory';
-import { URL_BASE } from '../../src/utils/env-utils';
+import { INVENTORY_DATA } from '../pages/locatorsInventory';
+import { URL_BASE } from '../utils/env-utils';
 
 type MyFixtures = {
     loginPageOnly: LoginPage; 
